@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="couponForm">
+            <h2>Get Your Coupon</h2>
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <span class="error" id="fullNameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                <span class="error" id="phoneNumberError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <button type="submit">Get My Coupon</button>
+        </form>
+
+        <div id="thankYouPage" style="display: none;">
+            <h2>Thank You!</h2>
+            <p>Your coupon code is:</p>
+            <div class="coupon-code">SAVE25NOW</div>
+            <p>Use this code at checkout to save 25% on your next purchase. We've also sent this code to your email.</p>
+            <button id="resetForm">Get Another Coupon</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
